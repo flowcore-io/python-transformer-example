@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/flowcore-io/python-transformer-example/compare/v1.0.0...v1.0.1) (2023-09-20)
+
+
+### Bug Fixes
+
+* fixed artifact location ([04e7d28](https://github.com/flowcore-io/python-transformer-example/commit/04e7d28ed9ce18c5d04e4479e65f4a1562af8315))
+
 ## 1.0.0 (2023-09-20)
 
 
