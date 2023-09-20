@@ -1,7 +1,12 @@
 import uvicorn
 import os
+import sys
 from fastapi import FastAPI
 from pydantic import BaseModel
+
+arguments = sys.argv
+
+reload = True if "--reload" in arguments else False
 
 app = FastAPI()
 
@@ -42,4 +47,4 @@ async def transform(body: Body):
     return {"eventId": body.eventId, "validTime": body.validTime, **body.payload.model_dump()}
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ["PORT"]), log_level="info")
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ["PORT"] if "PORT" in os.environ else 8000), log_level="info", reload=reload)
