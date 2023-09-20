@@ -3,7 +3,7 @@ version: "3.8"
 services:
   shell:
     container_name: transformer-shell
-    image: flowcoreio/adapter-python-transformer-shell:1.1.0
+    image: flowcoreio/adapter-python-transformer-shell:1.1.2
     ports:
       - "3001:3001"
     environment:

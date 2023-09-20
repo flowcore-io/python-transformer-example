@@ -1,3 +1,5 @@
+import uvicorn
+import os
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -37,4 +39,7 @@ Transformer
 @app.post("/transform")
 async def transform(body: Body):
     print("received body", body)
-    return {"eventId": body.eventId, "validTime": body.validTime, **body.payload.dict()}
+    return {"eventId": body.eventId, "validTime": body.validTime, **body.payload.model_dump()}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ["PORT"]), log_level="info")
