@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/flowcore-io/python-transformer-example/compare/v1.0.1...v1.0.2) (2023-09-20)
+
+
+### Bug Fixes
+
+* integrated uvicorn into main py application ([0b2d1ea](https://github.com/flowcore-io/python-transformer-example/commit/0b2d1ea1ce9a98b900a626c4cf18f18fc978477a))
+
 ## [1.0.1](https://github.com/flowcore-io/python-transformer-example/compare/v1.0.0...v1.0.1) (2023-09-20)
 
 
