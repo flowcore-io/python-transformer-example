@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.0.0 (2023-09-20)
+
+
+### Features
+
+* initial commit with typescript tests ([39117bd](https://github.com/flowcore-io/python-transformer-example/commit/39117bd355afa28b168cb66aea74bc385daf4971))
+
+
+### Bug Fixes
+
+* changed mount directory ([a59b615](https://github.com/flowcore-io/python-transformer-example/commit/a59b615f359753f1eadf3471a849fb7d810eac2e))
+* changed shell container image ([d1509bb](https://github.com/flowcore-io/python-transformer-example/commit/d1509bbcd73d160be140366ed3bbb46d570f19b8))
+* fixed the package.json name field ([0285ae2](https://github.com/flowcore-io/python-transformer-example/commit/0285ae26920bb64434aa94ca802a50b0fb1de13c))
+* moved express to dev dependency ([478dab3](https://github.com/flowcore-io/python-transformer-example/commit/478dab30221537bb1ec6a905f20abfc1d925ee1a))
+* removed list of build directory ([51701d8](https://github.com/flowcore-io/python-transformer-example/commit/51701d8f5d416970f545e0e1550723d57a464901))
+* removed unused scripts ([a4e6d9e](https://github.com/flowcore-io/python-transformer-example/commit/a4e6d9e264c243882ef0f3b853f0e7c9d52ff567))
+
 ## [1.3.0](https://github.com/flowcore-io/nodejs-typescript-transformer-example/compare/v1.2.0...v1.3.0) (2023-09-12)
 
 
