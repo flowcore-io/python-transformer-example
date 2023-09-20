@@ -28,7 +28,7 @@ jobs:
         run: |
           yarn install --frozen-lockfile
       - name: Change Permissions on Dist
-        run: chmod -R 777 dist
+        run: chmod -R 777 src
       - name: List Build Directory
         run: ls -la dist
       - name: Start Transformer Shell
