@@ -34,24 +34,9 @@ jobs:
       - name: Show package name
         run: 'echo "version ${{ steps.package.outputs.value }}"'
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.5.1
-        with:
-          node-version: "${{ env.NODE_VERSION }}"
-          cache: yarn
-      - name: Yarn install
-        run: |
-          yarn install --frozen-lockfile
-      - name: Lint
-        run: yarn lint
-      - name: Build Artifact
-        run: |
-          yarn build
-          yarn install --frozen-lockfile --production --modules-folder dist/node_modules
-
       - name: Compress Artifact
         run: zip -r ${{ steps.package.outputs.value }}-${{ steps.version.outputs.value }}.zip .
-        working-directory: dist
+        working-directory: src
 
       - name: Upload artifact and release
         uses: nanoufo/action-upload-artifacts-and-release-assets@main

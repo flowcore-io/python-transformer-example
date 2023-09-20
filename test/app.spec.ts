@@ -17,10 +17,11 @@ dayjs.extend(utc);
 
 const TRANSFORMER_BLUEPRINT: TransformerBlueprint = {
   name: "test-transformer",
-  version: "1.0.0",
-  runtime: "node",
+  version: "1.0.1",
+  runtime: "python",
   artifactUrl: "/app/transformers/test-transformer",
-  entrypoint: "main.js",
+  installCommand: "source .venv/bin/activate && pip install --isolated -r requirements.txt",
+  entrypoint: "main",
   startTimeTimeout: 10000,
 } as TransformerBlueprint;
 

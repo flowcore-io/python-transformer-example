@@ -1,6 +1,6 @@
-# NodeJS Typescript Transformer Example Repository
+# Python Typescript Transformer Example Repository
 
-This repository contains a simple example of a NodeJS Typescript Transformer.
+This repository contains a simple example of a Python Typescript Transformer.
 
 ## Entrypoint
 
@@ -17,12 +17,18 @@ This endpoint is used by the transformer shell to transform data.
 ## Installation
 
 prerequisites:
-- NodeJS
+- Python3
 - Docker
+
+create environment
+```bash
+python -m venv .testvenv
+soruce .testvenv/bin/activate
+```
 
 install dependencies:
 ```bash
-yarn install && yarn build
+pip install -r requirements.txt
 ```
 
 run the transformer shell
@@ -31,11 +37,6 @@ docker-compose -f test/docker/docker-compose.yaml up -d
 ```
 
 ## Development
-
-To start developing with watch mode run:
-```bash
-yarn build:watch
-```
 
 In another terminal or tab, run:
 ```bash
@@ -46,12 +47,9 @@ to run the tests on the built transformer.
 
 When changes are made any of the files the transformer will be reloaded and the tests will be run again.
 
-> **Note**!
-> The dist directory needs to be writable by the transformer shell.
-
 ### Change the transformer
 
-To change the transformer, edit the `transform.entrypoint.ts` file. To add functionality on startup edit the `start.entrypoint.ts` file. To add additional health checks edit the `health.entrypoint.ts` file.
+To change the transformer modify the contents of the transformer method
 
 ### Change the input and output data
 

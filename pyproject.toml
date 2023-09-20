@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = [
+    "test",
+]
+
+[build-system]
+requires = ["setuptools ~= 58.0", "cython ~= 0.29.0"]
