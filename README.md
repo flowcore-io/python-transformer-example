@@ -18,7 +18,7 @@ This endpoint is used by the transformer shell to transform data.
 
 prerequisites:
 - Python
-- NodeJS
+- NodeJS (required for tests)
 - Docker
 
 create environment
