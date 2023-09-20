@@ -37,6 +37,12 @@ run the transformer shell
 docker-compose -f test/docker/docker-compose.yaml up -d
 ```
 
+> Note:
+> If you want to run the transformer locally without tests and use something like Postman or Insomnia to test it manually, run with ` uvicorn --app-dir src main:app --reload`
+
+> Note:
+> If you want to skip tests all together as part of the build process,remove the `.github/workflows/test.yml` workflow file
+
 ## Testing
 
 Install test environment requirements
