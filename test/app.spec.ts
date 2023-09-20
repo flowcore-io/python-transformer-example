@@ -20,7 +20,7 @@ const TRANSFORMER_BLUEPRINT: TransformerBlueprint = {
   version: "1.0.0",
   runtime: "python",
   artifactUrl: "/app/transformers/test-transformer",
-  entrypoint: "main",
+  entrypoint: "main.py",
   startTimeTimeout: 10000,
 } as TransformerBlueprint;
 
