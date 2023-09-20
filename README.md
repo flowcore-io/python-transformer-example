@@ -17,7 +17,8 @@ This endpoint is used by the transformer shell to transform data.
 ## Installation
 
 prerequisites:
-- Python3
+- Python
+- NodeJS
 - Docker
 
 create environment
