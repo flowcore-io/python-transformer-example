@@ -14,7 +14,7 @@ This endpoint is used by the transformer shell to check if the transformer is he
 
 This endpoint is used by the transformer shell to transform data.
 
-## Installation
+## Development
 
 prerequisites:
 - Python
@@ -37,7 +37,12 @@ run the transformer shell
 docker-compose -f test/docker/docker-compose.yaml up -d
 ```
 
-## Development
+## Testing
+
+Install test environment requirements
+```bash
+yarn install
+```
 
 In another terminal or tab, run:
 ```bash
