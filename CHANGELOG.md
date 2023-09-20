@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0 (2023-09-20)
+
+
+### Features
+
+* initial commit with typescript tests ([39117bd](https://github.com/flowcore-io/python-transformer-example/commit/39117bd355afa28b168cb66aea74bc385daf4971))
+
+
+### Bug Fixes
+
+* removed unused scripts ([a4e6d9e](https://github.com/flowcore-io/python-transformer-example/commit/a4e6d9e264c243882ef0f3b853f0e7c9d52ff567))
+
 ## [1.3.0](https://github.com/flowcore-io/nodejs-typescript-transformer-example/compare/v1.2.0...v1.3.0) (2023-09-12)
 
 
