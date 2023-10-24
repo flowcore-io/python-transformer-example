@@ -3,12 +3,15 @@ version: "3.8"
 services:
   shell:
     container_name: transformer-shell
-    image: flowcoreio/adapter-python-transformer-shell:1.1.4
+    image: flowcoreio/adapter-python-transformer-shell:2.0.1
     ports:
       - "3001:3001"
+      - "10000:10000"
     environment:
       LOG_LEVEL: debug
       LOG_PRETTY_PRINT: "true"
       PORT: 3001
+      TRANSFORMER_DEV_MODE: "true"
     volumes:
       - ./../../src:/app/transformers/test-transformer
+      - ./../config:/usr/src/app/transformer
