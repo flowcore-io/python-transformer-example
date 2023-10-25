@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/flowcore-io/python-transformer-example/compare/v2.0.0...v2.0.1) (2023-10-25)
+
+
+### Bug Fixes
+
+* bumped to adapter version with health check ([7a23a02](https://github.com/flowcore-io/python-transformer-example/commit/7a23a02c14c2b6fa61a26849e166dc0881666dc0))
+
 ## [2.0.0](https://github.com/flowcore-io/python-transformer-example/compare/v1.0.2...v2.0.0) (2023-10-24)
 
 
