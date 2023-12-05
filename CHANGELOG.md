@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/flowcore-io/python-transformer-example/compare/v2.0.1...v2.0.2) (2023-12-05)
+
+
+### Bug Fixes
+
+* bumped transformer shell to 2.1.0 ([3891755](https://github.com/flowcore-io/python-transformer-example/commit/3891755ae91c47ed417721c7b7252cace7c10b27))
+
 ## [2.0.1](https://github.com/flowcore-io/python-transformer-example/compare/v2.0.0...v2.0.1) (2023-10-25)
 
 
